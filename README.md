@@ -60,6 +60,44 @@ Projenin bulunduğu dizine geçip
 
 komutunu verdiğimizde localimizde yeni bir depo oluşturmuş oluruz.
 
+## Diff
+
+### Yapılan değişiklikleri görme
+
+```git diff ```
+
+Komutu ile commitlenmemiş yapılan değişiklikleri görebiliriz.
+
+### Bir dosya üzerinde yapılan değişiklikleri görme
+
+```git diff <dosya_adı> ```
+
+Komutu ile bir dosya üzerinde yapılan değişiklikleri görebiliriz.
+
+### Belirtilen Commit ile deponun şu an ki hali arasındaki değişiklikleri görme 
+
+```git diff <commit_id> ```
+
+Komutu ile yazdığımız commit ile deponun şu an ki hali arasındaki değişiklikleri görebiliriz.
+
+### 2 commit arasındaki değişiklikleri görme 
+
+```git diff <commit_id> <commit_id> ```
+
+Komutu ile 2 commit arasındaki yapılan değişikleri görebiliriz.
+
+### Sadece değişiklik yapılan dosya isimlerini görme
+
+```git diff --name-only ```
+
+Komutu ile sadece değişiklik yapılan dosyaların adını listeyebilirz.
+
+### 2 versiyon arasındaki değişiklikleri görme
+
+```git diff <tag_adı> <tag_adı> ```
+
+Komutunu vererek 2 versiyon arasındaki değişiklikleri görebiliriz.
+
 ## Push 
 
 Localdeki commitlenmiş değişikleri uzaktaki depoya göndermemizi sağlar.
