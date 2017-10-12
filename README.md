@@ -1,17 +1,33 @@
 # Git komutları 
 
-# Config 
+## Config 
 
 ```git config --global user.email "<e-mail>" ```
+
+
 ```git config --global user.name "<username>" ```
 
 Commitlerimizde görüncek kimliğimizi belirlemek için bu konfigrasyonları yapmalıyız.
 Burada yazacağımız mail adresi ve kullanıcı adımızın github veya bitbucket da kullandıklarımız
 olmasına dikkat etmeliyiz.
 
-# Branch
+## Remote
 
-## Yeni branch olusturma
+Remote uzun linkleri kısaltmamıza ve onları bir isim ile bağdaştırmamızı sağlar.
+
+### Yeni remote ekleme 
+
+```git remote add <remote_adı> https://github.com/<username>/<repo_adı>.git ```
+
+Komutunu verdiğimizde <remote_adı> kısmına yazdığımız isim ile linki kısaltmış oluruz.
+
+### Remoteları listeleme
+
+```git remote -v ```
+
+## Branch
+
+### Yeni branch olusturma
 
 ```git branch <branch_adı>```
 
@@ -29,13 +45,13 @@ git push -u <remote> <branch_adı>
 Komutunu verdiğimizde localimizde yeni oluşturduğumuz branchı uzaktaki repoya göndermiş
 oluruz.
 
-## Branchlar arası geçiş
+### Branchlar arası geçiş
 
 ```git checkout <branch_adı>```
 
 Komutunu verdiğimizde var olan branchlar arasında geçiş sağlarız.
 
-## Var olan Branchları listeleme
+### Var olan Branchları listeleme
 
 ```git branch ```
 
@@ -49,20 +65,20 @@ Uzak depodaki branchları listeler.
 
 Hem localdeki hem uzak repodaki branchları listler.
 
-## Localdeki Branchı silme 
+### Localdeki Branchı silme 
 
 ```git branch -d <branch_adı>```
 
 Komutunu verdiğimizde adını yazdığımız branch bizim localimizden silinir.Fakat uzaktaki repodan
 silinmez.
 
-## Uzaktaki Branchı silme 
+### Uzaktaki Branchı silme 
 
 ```git push <remote> --delete <branch_adı> ```
 
 Komutunu verdiğimizde adını yazdığımız branch uzakdaki depodan silinir.
 
-## Branch birleştirme
+### Branch birleştirme
 
 ```git checkout <birleştirilecek_branch_adı> ```
 
