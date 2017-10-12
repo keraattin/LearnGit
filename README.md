@@ -31,3 +31,16 @@ Komutunu verdiğimizde var olan branchlar arasında geçiş sağlarız.
 ```git branch ```
 
 Komutunu verdiğimizde var olan branchlar listelenir.
+
+## Localdeki Branchı silme 
+
+```git branch -d <branch_adı>```
+
+Komutunu verdiğimizde adını yazdığımız branch bizim localimizden silinir.Fakat uzaktaki repodan
+silinmez.
+
+## Uzaktaki Branchı silme 
+
+```git push <remote> --delete <brancg_adı> ```
+
+Komutunu verdiğimizde adını yazdığımız branch uzakdaki depodan silinir.
