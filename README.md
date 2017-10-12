@@ -37,7 +37,7 @@ Komutunu verdiğimizde remote ismini değiştirmiş oluruz.
 
 Komutunu verdiğimizde adını yazdığımız remote'yi sileriz.
 
-### Bir Remote'nin linkini değiştirme 
+### Bir Remote'nin linkini değiştirme  Push
 
 ```git remote set-url <remote_adı> https://github.com/<username>/<repo_adı>.git ```
 
@@ -59,6 +59,12 @@ Projenin bulunduğu dizine geçip
 ```git init ```
 
 komutunu verdiğimizde localimizde yeni bir depo oluşturmuş oluruz.
+
+## Push 
+
+Localdeki commitlenmiş değişikleri uzaktaki depoya göndermemizi sağlar.
+
+```git push <remote_adı> <branc_adı> ```
 
 ## Branch
 
