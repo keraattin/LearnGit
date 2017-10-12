@@ -104,6 +104,47 @@ Localdeki commitlenmiş değişikleri uzaktaki depoya göndermemizi sağlar.
 
 ```git push <remote_adı> <branc_adı> ```
 
+## Tag - Version
+
+### Tag olusturma 
+
+```git tag <tag> ```
+
+Komutunu verdiğimizde son atılan commit için tag oluşturur ve eğer 
+pushlarsak onu realese olarak yayınlar.
+
+### Oluşturduğumuz tag'i uzaktaki depoya gönderme
+
+```git push <remote_adı> <tag>```
+
+Komutunu verdiğimizde oluşturduğumuz tag uzaktaki depoya pushlanır.
+
+### Tagleri listeleme
+
+```git tag ```
+
+veya
+
+```git tag -l ```
+
+Komutu ile oluşturdğumuz tagleri görebiliriz.
+
+### Localdeki tag'i silme 
+
+```git tag -d <tag_adı> ```
+
+Komutu ile localdeki tagı sileriz ama uzak depodaki tag silinmez.
+
+### Uzak depodaki tag'i silme
+
+```git psuh origin :<tag_adı> ```
+
+veya
+
+```git push --delete <remote_adı> <tag_adı> ```
+
+Komutlarından biri ile uzak depodaki tagleri silmiş oluruz.
+
 ## Branch
 
 ### Yeni branch olusturma
