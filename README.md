@@ -12,6 +12,8 @@ Komutunu verdiğimizde localimizde yeni bir branch olusturruz ve o branch'a geç
 yapar.
 
 ```
-git checkout -b 
-git push -u <remote> <branch_adı>```
-Komutunu verdiğimizde localimizde yeni oluşturduğumuz branchı
+git checkout <branch_adı> (Oluşturduğumuz yeni brancha geçmek için)
+git push -u <remote> <branch_adı>
+```
+Komutunu verdiğimizde localimizde yeni oluşturduğumuz branchı uzaktaki repoya göndermiş
+oluruz.
