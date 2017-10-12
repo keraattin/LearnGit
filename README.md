@@ -55,4 +55,14 @@ Komutunu verdiğimizde adını yazdığımız branch uzakdaki depodan silinir.
 
 ## Branch birleştirme
 
+```git checkout <birleştirilecek_branch_adı> ```
 
+Birleştireceğimiz brancha geçiş yaptık.
+
+```git merge <birleşecek_branch_adı> ```
+
+Komutunu vererek iki branchı birleştirdik.
+
+```git push -u <remote> <branch_adı> ```
+
+Birleştirdiğimiz branchları uzakdaki repoya pushladık.
