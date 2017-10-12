@@ -41,6 +41,6 @@ silinmez.
 
 ## Uzaktaki Branchı silme 
 
-```git push <remote> --delete <brancg_adı> ```
+```git push <remote> --delete <branch_adı> ```
 
 Komutunu verdiğimizde adını yazdığımız branch uzakdaki depodan silinir.
