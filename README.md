@@ -1,5 +1,14 @@
 # Git komutları 
 
+# Config 
+
+```git config --global user.email "<e-mail>" ```
+```git config --global user.name "<username>" ```
+
+Commitlerimizde görüncek kimliğimizi belirlemek için bu konfigrasyonları yapmalıyız.
+Burada yazacağımız mail adresi ve kullanıcı adımızın github veya bitbucket da kullandıklarımız
+olmasına dikkat etmeliyiz.
+
 # Branch
 
 ## Yeni branch olusturma
