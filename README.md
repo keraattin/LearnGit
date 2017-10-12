@@ -43,6 +43,23 @@ Komutunu verdiğimizde adını yazdığımız remote'yi sileriz.
 
 Komutu ile remote ların işaret ettiği linki değiştirebiliriz.
 
+## İnit
+
+### Var olan bir projeyi locale çekme
+
+```git clone https://github.com/<username>/<repo_adı>.git ```
+
+Komutunu verdiğimizde projeyi localimize çekmiş oluyoruz ve otomatik olarak "origin" adında
+bir remote eklenmiş oluyor.
+
+### Localde yeni bir depo oluşturma
+
+Projenin bulunduğu dizine geçip 
+
+```git init ```
+
+komutunu verdiğimizde localimizde yeni bir depo oluşturmuş oluruz.
+
 ## Branch
 
 ### Yeni branch olusturma
