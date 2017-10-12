@@ -25,6 +25,24 @@ Komutunu verdiğimizde <remote_adı> kısmına yazdığımız isim ile linki kı
 
 ```git remote -v ```
 
+### Bir Remote'nin ismini değiştirme
+
+```git remote rename <remote_adı> <yeni_remote_adı> ```
+
+Komutunu verdiğimizde remote ismini değiştirmiş oluruz.
+
+### Remote silme
+
+```git remote rm <remote_adı>```
+
+Komutunu verdiğimizde adını yazdığımız remote'yi sileriz.
+
+### Bir Remote'nin linkini değiştirme 
+
+```git remote set-url <remote_adı> https://github.com/<username>/<repo_adı>.git ```
+
+Komutu ile remote ların işaret ettiği linki değiştirebiliriz.
+
 ## Branch
 
 ### Yeni branch olusturma
