@@ -37,7 +37,7 @@ Komutunu verdiğimizde remote ismini değiştirmiş oluruz.
 
 Komutunu verdiğimizde adını yazdığımız remote'yi sileriz.
 
-### Bir Remote'nin linkini değiştirme  Push
+### Bir Remote'nin linkini değiştirme
 
 ```git remote set-url <remote_adı> https://github.com/<username>/<repo_adı>.git ```
 
@@ -241,4 +241,35 @@ Birleştirdiğimiz branchları uzakdaki repoya pushladık.
 Komutu ile localde branchımızın adını değiştirdik.
 
 ```git push <remote> :<eski_branch_adı> <yeni_branch_adı>```
+
+## Reset
+
+### Bir dosyada yapılan değişiklikleri geri almak için
+
+```git checkout <dosya_adı>```
+
+
+### Commitlenmemiş ama staged area'ya geçmiş değişiklikleri geri almak için
+
+```git reset <dosya_adı>```
+
+### Projede belirli bir commite geri dönme
+
+```git reset --soft <commit_id>```
+
+Komutunu verdiğimizde id sini yazdığımız commite geri döneriz fakat commitler silinmez. 
+
+### Projede belirli bir commite geri dönme ve ondan sonraki commitleri silme
+
+```git reset --hard <commit_id>```
+
+Komutunu verdiğimizde id sini yazdığımız commite geri döneriz ve geri döndüğümüz committen sonraki
+bütün commitler silinir.
+
+### Projeyi belirli bir taglenmiş zamana geri döndürme
+
+```git reset --hard <tag_adı>```
+
+Komutunu verdiğimizde projemiz yazdığımız tagdeki haline döner. Verdiğimiz tagden sonraki commitler
+silinir. 
 
