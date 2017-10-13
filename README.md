@@ -106,6 +106,8 @@ Localdeki commitlenmiş değişikleri uzaktaki depoya göndermemizi sağlar.
 
 ## Commit 
 
+### Commit olusturma 
+
 ```git commit -m "<commit_mesajı> ```
 
 Komutunu verdiğimizde stagged olan dosyalara mesaj ile bir commit atmış oluruz.
@@ -115,6 +117,22 @@ Her commit bir mesaj içermelidir.
 
 Komutunu verdiğimizde stagged olmayan ama değişiklik yapılan tüm dosyaları 
 staged yapar ve bir mesaj ile commit atmış olur.
+
+### Son commiti düzeltme
+
+ ```git commit --amend -m "<commit_mesajı> ```
+
+### Belirli bir commit değiştirme 
+
+ ```git rebase -i HEAD~3 ```
+
+Komutu ile son 3 commiti getirdik.
+Deşitireceğimiz commitin mesajınının başını pick den reword olarak değiştiriyoruz.
+Kaydedip çıkınca commit mesajınını bulunduğu ekran çıkıyor.Yeni commit mesajımızı yazıp
+kaydedip çıkıyoruz.
+Sonra yapılan değişiklikleri uzaktaki depoya puslamak için:
+
+ ```git push --force <remote> <branch_adı> ```
 
 
 ## Tag - Version
