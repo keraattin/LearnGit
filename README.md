@@ -102,7 +102,7 @@ Komutunu vererek 2 versiyon arasındaki değişiklikleri görebiliriz.
 
 Localdeki commitlenmiş değişikleri uzaktaki depoya göndermemizi sağlar.
 
-```git push <remote_adı> <branc_adı> ```
+```git push <remote_adı> <branch_adı> ```
 
 ## Commit 
 
@@ -233,3 +233,12 @@ Komutunu vererek iki branchı birleştirdik.
 ```git push -u <remote> <branch_adı> ```
 
 Birleştirdiğimiz branchları uzakdaki repoya pushladık.
+
+### Branch ismi değiştirme 
+
+```git branch -m <branch_adı> <yeni_branch_adı>```
+
+Komutu ile localde branchımızın adını değiştirdik.
+
+```git push <remote> :<eski_branch_adı> <yeni_branch_adı>```
+
