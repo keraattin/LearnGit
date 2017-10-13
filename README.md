@@ -292,3 +292,19 @@ Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
 
 ```git log -<kac_adet>```
 
+## Pull
+
+### Yapılan değişiklikleri locale çekmek
+
+```git pull <remote> <branch_adı>```
+
+Komutunu verdiğimizde adını yazdığımız branchda yapılan değişiklikleri localimize çekeriz.
+
+Bir başka yolu ise:
+
+```git fetch <remote>``` 
+
+Dedikten sonra, 
+
+```git merge <remote>/<branch>```
+
