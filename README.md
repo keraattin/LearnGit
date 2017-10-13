@@ -258,6 +258,9 @@ Komutu ile localde branchımızın adını değiştirdik.
 ```git reset --soft <commit_id>```
 
 Komutunu verdiğimizde id sini yazdığımız commite geri döneriz fakat commitler silinmez. 
+Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
+
+```git push <remote> <branch_adı> --force```
 
 ### Projede belirli bir commite geri dönme ve ondan sonraki commitleri silme
 
@@ -265,6 +268,9 @@ Komutunu verdiğimizde id sini yazdığımız commite geri döneriz fakat commit
 
 Komutunu verdiğimizde id sini yazdığımız commite geri döneriz ve geri döndüğümüz committen sonraki
 bütün commitler silinir.
+Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
+
+```git push <remote> <branch_adı> --force```
 
 ### Projeyi belirli bir taglenmiş zamana geri döndürme
 
@@ -272,4 +278,7 @@ bütün commitler silinir.
 
 Komutunu verdiğimizde projemiz yazdığımız tagdeki haline döner. Verdiğimiz tagden sonraki commitler
 silinir. 
+Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
+
+```git push <remote> <branch_adı> --force```
 
