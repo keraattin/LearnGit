@@ -316,6 +316,10 @@ Komutunu verdiğimizde localde son yaptığımız commiti geri alır ama değiş
 
 ```git log -<kac_adet>```
 
+### Commitleri id ve mesaj olarak gösterme 
+
+ ```git log --pretty=oneline ```
+
 ## Pull
 
 ### Yapılan değişiklikleri locale çekmek
