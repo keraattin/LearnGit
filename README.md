@@ -282,3 +282,13 @@ Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
 
 ```git push <remote> <branch_adı> --force```
 
+## Log
+
+### Projemizde attığımız commitleri listelemek için
+
+```git log```
+
+### Projemizdeki son bir kaç commiti listelemek için
+
+```git log -<kac_adet>```
+
