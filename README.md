@@ -282,6 +282,12 @@ Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
 
 ```git push <remote> <branch_adı> --force```
 
+### Localde yapılan son commiti geri alma
+
+```git reset HEAD^```
+
+Komutunu verdiğimizde localde son yaptığımız commiti geri alır ama değişiklikleri geri almaz.
+
 ## Log
 
 ### Projemizde attığımız commitleri listelemek için
