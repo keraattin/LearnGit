@@ -104,6 +104,19 @@ Localdeki commitlenmiş değişikleri uzaktaki depoya göndermemizi sağlar.
 
 ```git push <remote_adı> <branc_adı> ```
 
+## Commit 
+
+```git commit -m "<commit_mesajı> ```
+
+Komutunu verdiğimizde stagged olan dosyalara mesaj ile bir commit atmış oluruz.
+Her commit bir mesaj içermelidir.
+
+```git commit -a -m "<commit_mesajı> ```
+
+Komutunu verdiğimizde stagged olmayan ama değişiklik yapılan tüm dosyaları 
+staged yapar ve bir mesaj ile commit atmış olur.
+
+
 ## Tag - Version
 
 ### Tag olusturma 
@@ -137,7 +150,7 @@ Komutu ile localdeki tagı sileriz ama uzak depodaki tag silinmez.
 
 ### Uzak depodaki tag'i silme
 
-```git psuh origin :<tag_adı> ```
+```git push origin :<tag_adı> ```
 
 veya
 
@@ -145,6 +158,15 @@ veya
 
 Komutlarından biri ile uzak depodaki tagleri silmiş oluruz.
 
+### Tag güncelleme 
+
+```git tag --force <tag_adı> <commit_id>```
+
+Komutunu verdiğimizde localimizde tagı güncellemiş oluruz.
+
+```git push --force --tags```
+
+Komutunu verince de uzaktaki depodaki tagı güncellemiş oluruz.
 ## Branch
 
 ### Yeni branch olusturma
